@@ -1,0 +1,80 @@
+.gallery-container {
+  padding: 20px;
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.empty-gallery {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.create-link {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.create-link:hover {
+  background-color: #555;
+}
+
+.crewmate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.crewmate-card {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 5px solid;
+  transition: transform 0.3s;
+  color: white;
+}
+
+.crewmate-card:hover {
+  transform: translateY(-5px);
+}
+
+.crewmate-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.crewmate-info {
+  margin-bottom: 15px;
+}
+
+.crewmate-info h3 {
+  margin-bottom: 10px;
+}
+
+.edit-button {
+  display: block;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.edit-button:hover {
+  background-color: #555;
+}

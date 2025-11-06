@@ -1,0 +1,93 @@
+.create-container {
+  padding: 20px;
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.create-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #444;
+  color: white;
+}
+
+.color-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.color-option {
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #444;
+}
+
+.color-option:hover {
+  background-color: #555;
+}
+
+.color-option.selected {
+  background-color: #777;
+  color: white;
+  border: 2px solid white;
+}
+
+.create-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.create-button:hover {
+  background-color: #777;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.loading {
+  color: white;
+  margin-top: 10px;
+}
+
+.create-crewmate-image {
+  max-width: 200px;
+  display: block;
+  margin: 20px auto;
+}

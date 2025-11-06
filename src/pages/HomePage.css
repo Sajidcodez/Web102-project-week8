@@ -1,0 +1,38 @@
+.home-container {
+  padding: 20px;
+  text-align: center;
+  width: calc(100% - 200px);
+  margin-left: 200px;
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+}
+
+.home-container h1 {
+  margin-bottom: 20px;
+  padding-top: 40px;
+  font-size: 2.5rem;
+}
+
+.home-container p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crewmate-image {
+  max-width: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+.spaceship-image {
+  max-width: 350px;
+  display: block;
+  margin: 20px auto;
+}
