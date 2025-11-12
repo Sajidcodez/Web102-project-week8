@@ -56,7 +56,11 @@ const CrewmateDetails = () => {
             <p>Color: {crewmate.color}</p>
             <p>Speed: {crewmate.speed} mph</p>
           </div>
-          <p className="fun-fact">You may want to find a Crewmate with more speed, this one is kind of slow 😉</p>
+          <p className="fun-fact">
+            {crewmate.speed <= 10 ? `⚠️ ${crewmate.name} is quite slow at ${crewmate.speed} mph. Consider recruiting a faster crewmate!` 
+            : crewmate.speed <= 20 ? `${crewmate.name} has moderate speed at ${crewmate.speed} mph. Not bad, but could be faster!` 
+            : `🚀 ${crewmate.name} is blazing fast at ${crewmate.speed} mph! Excellent crew member!`}
+          </p>
           <div className="buttons">
             <Link to={`/edit/${crewmate.id}`} className="edit-link">Edit this Crewmate?</Link>
             <Link to="/gallery" className="back-link">Back to Gallery</Link>

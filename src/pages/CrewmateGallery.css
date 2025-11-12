@@ -3,9 +3,34 @@
   width: calc(100% - 200px);
   margin-left: 200px;
   background-color: #000;
+  background-image: url('https://wallpapers.com/images/hd/among-us-colorful-crewmates-mvi75r44yybp1vpa.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
   min-height: 100vh;
   text-align: center;
+  position: relative;
+}
+
+.gallery-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.gallery-container h2,
+.gallery-container .empty-gallery,
+.gallery-container .error,
+.gallery-container .crewmate-grid {
+  position: relative;
+  z-index: 2;
 }
 
 .empty-gallery {
@@ -34,6 +59,11 @@
   margin-top: 30px;
 }
 
+.crewmate-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .crewmate-card {
   background-color: #333;
   border-radius: 8px;
@@ -42,6 +72,7 @@
   border: 5px solid;
   transition: transform 0.3s;
   color: white;
+  cursor: pointer;
 }
 
 .crewmate-card:hover {

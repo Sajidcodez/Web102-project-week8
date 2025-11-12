@@ -46,19 +46,21 @@ const CrewmateGallery = () => {
       
       <div className="crewmate-grid">
         {crewmates.map(crewmate => (
-          <div key={crewmate.id} className="crewmate-card" style={{ borderColor: crewmate.color.toLowerCase() }}>
-            <img 
-              src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/03/among-us-crewmates.jpg" 
-              alt="Crewmate" 
-              className="crewmate-image" 
-            />
-            <div className="crewmate-info">
-              <h3>Name of Crewmate: {crewmate.name}</h3>
-              <p>Speed of Crewmate: {crewmate.speed} mph</p>
-              <p>Color of Crewmate: {crewmate.color}</p>
+          <Link to={`/crewmate/${crewmate.id}`} key={crewmate.id} className="crewmate-card-link">
+            <div className="crewmate-card" style={{ borderColor: crewmate.color.toLowerCase() }}>
+              <img 
+                src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/03/among-us-crewmates.jpg" 
+                alt="Crewmate" 
+                className="crewmate-image" 
+              />
+              <div className="crewmate-info">
+                <h3>Name of Crewmate: {crewmate.name}</h3>
+                <p>Speed of Crewmate: {crewmate.speed} mph</p>
+                <p>Color of Crewmate: {crewmate.color}</p>
+              </div>
+              <Link to={`/edit/${crewmate.id}`} className="edit-button" onClick={(e) => e.stopPropagation()}>Edit Crewmate</Link>
             </div>
-            <Link to={`/edit/${crewmate.id}`} className="edit-button">Edit Crewmate</Link>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

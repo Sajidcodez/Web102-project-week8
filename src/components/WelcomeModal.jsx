@@ -29,15 +29,21 @@ const WelcomeModal = () => {
             <div className="feature">
               <span className="feature-icon">👥</span>
               <h3>Create Crewmates</h3>
-              <p>Build your perfect crew by creating custom crewmates with unique attributes</p>
+              <p>Build your perfect crew by creating custom crewmates with unique attributes and speeds</p>
             </div>
             
             <div className="feature">
               <span className="feature-icon">📋</span>
               <h3>View Gallery</h3>
-              <p>Browse all your crewmates and see who's ready for the next mission</p>
+              <p>Browse all your crewmates and click to view detailed information about each one</p>
             </div>
             
+            <div className="feature">
+              <span className="feature-icon">⚡</span>
+              <h3>Speed Categories</h3>
+              <p>Slow (≤10 mph) • Moderate (11-20 mph) • Fast (21+ mph)</p>
+            </div>
+
             <div className="feature">
               <span className="feature-icon">✏️</span>
               <h3>Edit & Manage</h3>
