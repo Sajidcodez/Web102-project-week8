@@ -7,6 +7,8 @@ This web app: **A crewmate management system for space missions! Create and mana
 
 Time spent: **12** hours spent in total
 
+🔗 --> [View Live Website](https://crewmatez.netlify.app/)
+
 ## Required Features
 
 The following **required** functionality is completed:
@@ -50,7 +52,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://imgur.com/a/OFxwsMu.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/a/OFxwsMu' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
